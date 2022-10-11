@@ -5,8 +5,6 @@ function getInfo(){
   let City = document.getElementById("City");
   City.innerHTML = "--"+newName.value+"--"
 
-
-
 fetch("https://api.openweathermap.org/data/2.5/forecast?q="+newName.value+"&appid=f62c5ac8eb8c429f4457d3d790e6bf85")
 .then(response => response.json())
 .then(data =>{
@@ -57,11 +55,6 @@ function getFromLocalStoragr(){
   console.log(historyData)
 
 }
-
-// function DefaultScreen(){
-//   
-//   getInfo();
-// }
 const d = new Date();
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 function CheckDay(day){
