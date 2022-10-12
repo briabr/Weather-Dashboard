@@ -32,12 +32,18 @@ font-weight:bold;
   left: 50%;
   margin-right: -100%;
   transform: translate(-50%, -50%);
-  height: 240px;
-  width: 1200px;    
+  height: 30px;
+  width: 30px;    
   border: 5px solid rgb(31, 82, 82);    
   border-radius: 10px;
 }
 
+#currentDayWeather{
+  /* grid-column: span 5 / span 5; */
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
 .icons{
   display: inline-bock;
   float: left;
@@ -46,6 +52,7 @@ font-weight:bold;
   margin: 20px;
   border: 5px solid rgb(48, 47, 47);
   border-radius: 10px;
+  size: 5ch;
 }
 
 .image{
@@ -56,6 +63,9 @@ font-weight:bold;
 .imgClass{
   height: 140px;
   width: 100%;
+  padding: 0;
+  size: 0ch;
+
 }
 
 .currentWeather{
