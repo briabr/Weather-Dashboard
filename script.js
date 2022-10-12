@@ -37,9 +37,9 @@ fetch(url).then(response => response.json()).then(data => {
   let hum_para = document.createElement('p')
   let wind_para = document.createElement('p')
 
-  wind_para.innerHTML = "Wind speed is " + data.wind.speed;
-  hum_para.innerHTML = "Humidity is " + data.main.humidity;
-  temp_para.innerHTML =" Temperature is " + data.main.temp;
+  wind_para.innerHTML = "Wind speed " + ":" + data.wind.speed;
+  hum_para.innerHTML = "Humidity " + ":" + data.main.humidity;
+  temp_para.innerHTML =" Temperature " + ":" + data.main.temp;
 
   weatherDiv.append(wind_para, hum_para,temp_para)
   document.getElementById('currentDayWeather').innerHTML = "" // clear the previous values and then append new regenerated values.
