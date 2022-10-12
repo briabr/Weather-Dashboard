@@ -1,5 +1,10 @@
 document.getElementById("cityInput").defaultValue = "New York";
 let history = []
+// var timeDisplayEl = $('#time-display');
+// function displayTime() {
+//   var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
+//   timeDisplayEl.text(rightNow);
+// }
 function getInfo(){
   let newName = document.getElementById("cityInput");
   let City = document.getElementById("City");
@@ -69,7 +74,4 @@ for(i=0; i<5; i++){
   document.getElementById("day"+(i+1)).innerHTML = weekday[CheckDay(i)];
 }
 getInfo();
-
-
-
 

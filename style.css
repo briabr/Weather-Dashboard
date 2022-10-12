@@ -24,6 +24,10 @@ font-weight:bold;
   grid-column: span 5 / span 5;
   font-size: 30px;
   color: black;
+  margin-left: 150px;
+  padding-bottom: 10px;
+  font-family: 'Fira Sans', sans-serif;
+
 }
 
 #iconsContainer{
@@ -36,20 +40,30 @@ font-weight:bold;
   width: 30px;    
   border: 5px solid rgb(31, 82, 82);    
   border-radius: 10px;
+  margin: 20px;
 }
 
 #currentDayWeather{
   /* grid-column: span 5 / span 5; */
-  font-size: 15px;
+  font-size: 20px;
   color: black;
   font-weight: bold;
+  margin-left: 150px ;
+  font-family: 'Fira Sans', sans-serif;
+
+
+}
+#City{
+  margin-left: 150px;
+  font-size: 50px;
+  font-family: 'Fira Sans', sans-serif;
 }
 .icons{
   display: inline-bock;
   float: left;
   height: 200px;
   width: 190px;
-  margin: 20px;
+  margin-left: 150px;
   border: 5px solid rgb(48, 47, 47);
   border-radius: 10px;
   size: 5ch;
