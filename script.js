@@ -1,15 +1,15 @@
 document.getElementById("cityInput").defaultValue = "New York";
 let history = []
 function getInfo(){
-  let newName = document.getElementById("cityInput");
+  let newCityName = document.getElementById("cityInput");
   let City = document.getElementById("City");
-  City.innerHTML = "--"+newName.value+"--"
+  City.innerHTML = "--"+newCityName.value+"--"
 
-fetch("https://api.openweathermap.org/data/2.5/forecast?q="+newName.value+"&appid=f62c5ac8eb8c429f4457d3d790e6bf85")
+fetch("https://api.openweathermap.org/data/2.5/forecast?q="+newCityName.value+"&appid=f62c5ac8eb8c429f4457d3d790e6bf85")
 .then(response => response.json())
 .then(data =>{
   console.log(data)
-  history.push(newName.value)
+  history.push(newCityName.value)
   localStorage.setItem("cityList", [history])
   for(i=0; i<5; i++){
       document.getElementById("minTempDay"+(i+1)).innerHTML = "Min:"+ Number(data.list[i].main.temp_min -291.35).toFixed(1)+"°";   
@@ -21,7 +21,7 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?q="+newName.value+"&appi
       document.getElementById("img" +(i+1)).src ="http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon+".png";
   }
   console.log(data)
-  getSingleDayWeather(newName.value)
+  getSingleDayWeather(newCityName.value)
   getFromLocalStoragr()
 
 })
