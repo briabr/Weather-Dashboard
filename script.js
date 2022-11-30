@@ -15,7 +15,7 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?q="+newCityName.value+"&
       document.getElementById("minTempDay"+(i+1)).innerHTML = "Min:"+ Number(data.list[i].main.temp_min -291.35).toFixed(1)+"°";   
   }
   for(i=0; i<5; i++){
-      document.getElementById("maxTempDay"+(i+1)).innerHTML = "Max:"+ Number(data.list[i].main.temp_Max -291.35).toFixed(1)+"°";
+      document.getElementById("maxTempDay"+(i+1)).innerHTML = "Max:"+ Number(data.list[i].main.temp_max -291.35).toFixed(1)+"°";
   }
   for(i=0; i<5; i++){
       document.getElementById("img" +(i+1)).src ="http://openweathermap.org/img/wn/" + data.list[i].weather[0].icon+".png";
@@ -70,3 +70,4 @@ for(i=0; i<5; i++){
 }
 getInfo();
 
+addEventListener("click", )
